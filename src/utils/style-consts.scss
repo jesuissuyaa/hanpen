@@ -1,0 +1,28 @@
+// font stuff
+@import url("https://fonts.googleapis.com/css?family=M+PLUS+1p:400,700|PT+Sans:400,700&display=swap");
+
+@mixin font-stack {
+  font-family: "PT Sans", "M PLUS 1p", sans-serif;
+}
+
+$font-sm: 0.8rem;
+$font-md: 1rem;
+
+// paddings & margins
+$spacing: 1rem;
+$spacing-xs: 0.3rem;
+
+// size constants
+$menu-height: 5rem;
+
+/** 
+ * media query stuff
+ * see: https://medium.com/codeartisan/breakpoints-and-media-queries-in-scss-46e8f551e2f2
+**/
+$screen-lg-min: 900px;
+
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}

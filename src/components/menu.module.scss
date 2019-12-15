@@ -1,0 +1,48 @@
+@import "../utils/style-consts.scss";
+
+.container {
+  background-color: paleturquoise;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 3rem;
+  padding: $spacing;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  box-sizing: border-box;
+  @include lg {
+    flex-direction: column;
+    border-radius: 0;
+    justify-content: space-evenly;
+    // position
+    position: fixed;
+    right: 0;
+    // size
+    height: 100vh;
+    width: 20vw;
+  }
+}
+
+.icon {
+  margin-bottom: $spacing-xs;
+
+  @include lg {
+    margin-right: $spacing-xs;
+    margin-bottom: 0;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: $font-sm;
+
+  @include lg {
+    flex-direction: row;
+    font-size: $font-md;
+  }
+}
