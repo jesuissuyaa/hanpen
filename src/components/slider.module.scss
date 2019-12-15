@@ -1,0 +1,28 @@
+@import "../utils/style-consts.scss";
+
+$slideWidth: 10rem;
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16rem;
+  overflow-x: hidden;
+}
+
+.slideContainer {
+  display: flex;
+  width: 10rem;
+  border: 1px solid black;
+}
+
+img {
+  width: $slideWidth;
+}
+
+// temp
+.toggle {
+  height: 14rem;
+  font-size: 5rem;
+  background: paleturquoise;
+  z-index: 1000;
+}

@@ -1,5 +1,7 @@
 ## TODO
 
+- fix slider
+- design image: top page --> click "more" --> go to page
 - use gatsby-image
   <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
   <p align="center">
